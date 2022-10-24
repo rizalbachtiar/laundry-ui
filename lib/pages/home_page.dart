@@ -1,9 +1,6 @@
-import 'package:clone_ui_2/pages/laundry_page.dart';
 import 'package:clone_ui_2/util/promo.dart';
 import 'package:clone_ui_2/util/services.dart';
 import 'package:flutter/material.dart';
-import 'package:bottom_sheet_expandable_bar/bottom_sheet_bar_icon.dart';
-import 'package:bottom_sheet_expandable_bar/bottom_sheet_expandable_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -387,38 +384,6 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       )),
-      
-      // bottomSheet: BottomBarSheet(
-      //   showExpandableButton: false,
-      //   backgroundBarColor: Color(0xff0E1446),
-      //   children: [
-      //     BottomSheetBarIcon(
-      //       icon: Icon(
-      //         Icons.home_outlined,
-      //         color: Colors.amber[600],
-      //       ),
-      //       color: Color(0xff0E1446),
-      //       onTap: () {},
-      //     ),
-      //     BottomSheetBarIcon(
-      //       icon: Icon(Icons.confirmation_num_outlined),
-      //       color: Color(0xff0E1446),
-      //       onTap: () {
-      //         Navigator.pushNamed(context, '/laundry');
-      //       },
-      //     ),
-      //     BottomSheetBarIcon(
-      //       icon: Icon(Icons.location_on_outlined),
-      //       color: Color(0xff0E1446),
-      //       onTap: () {},
-      //     ),
-      //     BottomSheetBarIcon(
-      //       icon: Icon(Icons.timer_sharp),
-      //       color: Color(0xff0E1446),
-      //       onTap: () {},
-      //     ),
-      //   ],
-      // ),
     );
   }
 }
