@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
+          bottom: false,
           child: Padding(
         padding: const EdgeInsets.only(left: 25, right: 25, top: 30),
         child: Column(
@@ -294,96 +295,170 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             
-            Stack(
-
-              children: [
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0xff0E1446).withOpacity(0.5),
-                          spreadRadius: 2,
-                          blurRadius: 6,
-                          offset: Offset(0, 2), // changes position of shadow
-                        ),
-                      ],
-                      // color: Color(0xff0E1446),
-                    ),
-                    // margin: EdgeInsets.only(top: 12),
-                    width: double.infinity,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
-                              padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
-                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                  const RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.horizontal(left: Radius.circular(50))
-                                  )
-                              ),
-                          ),
-                          onPressed: (){},
-                          child: const Icon(
-                              Icons.home_outlined,
-                            color: Color(0xffFFD131),
-                          ),
-                        ),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
-                              padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
-                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                const RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.zero
-                                )
-                            ),
-                          ),
-                          onPressed: (){
-                            Navigator.pushNamed(context, '/laundry');
-                          },
-                          child: const Icon(Icons.confirmation_num_outlined),
-                        ),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
-                            padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                const RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.zero
-                                )
-                            ),
-                          ),
-                          onPressed: (){},
-                          child: const Icon(Icons.location_on_outlined),
-                        ),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0xffF467BB)),
-                            padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
-                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                  const RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.horizontal(right: Radius.circular(50))
-                                  )
-                              )
-                          ),
-                          onPressed: (){},
-                          child: const Icon(Icons.timer_sharp),
-                        ),
-                      ],
-                    )
-                  ),
-                )
-              ],
-            )
+            // Container(
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(50),
+            //     boxShadow: [
+            //       BoxShadow(
+            //         color: const Color(0xff0E1446).withOpacity(0.5),
+            //         spreadRadius: 2,
+            //         blurRadius: 6,
+            //         offset: Offset(0, 2), // changes position of shadow
+            //       ),
+            //     ],
+            //     // color: Color(0xff0E1446),
+            //   ),
+            //   // margin: EdgeInsets.only(top: 12),
+            //   width: double.infinity,
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.center,
+            //     children: [
+            //       ElevatedButton(
+            //         style: ButtonStyle(
+            //             backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+            //             padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+            //             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            //                 const RoundedRectangleBorder(
+            //                     borderRadius: BorderRadius.horizontal(left: Radius.circular(50))
+            //                 )
+            //             ),
+            //         ),
+            //         onPressed: (){},
+            //         child: const Icon(
+            //             Icons.home_outlined,
+            //           color: Color(0xffFFD131),
+            //         ),
+            //       ),
+            //       ElevatedButton(
+            //         style: ButtonStyle(
+            //             backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+            //             padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+            //             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            //               const RoundedRectangleBorder(
+            //                   borderRadius: BorderRadius.zero
+            //               )
+            //           ),
+            //         ),
+            //         onPressed: (){
+            //           Navigator.pushNamed(context, '/laundry');
+            //         },
+            //         child: const Icon(Icons.confirmation_num_outlined),
+            //       ),
+            //       ElevatedButton(
+            //         style: ButtonStyle(
+            //           backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+            //           padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+            //           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            //               const RoundedRectangleBorder(
+            //                   borderRadius: BorderRadius.zero
+            //               )
+            //           ),
+            //         ),
+            //         onPressed: (){},
+            //         child: const Icon(Icons.location_on_outlined),
+            //       ),
+            //       ElevatedButton(
+            //         style: ButtonStyle(
+            //           backgroundColor: MaterialStateProperty.all(Color(0xffF467BB)),
+            //           padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+            //             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            //                 const RoundedRectangleBorder(
+            //                     borderRadius: BorderRadius.horizontal(right: Radius.circular(50))
+            //                 )
+            //             )
+            //         ),
+            //         onPressed: (){},
+            //         child: const Icon(Icons.timer_sharp),
+            //       ),
+            //     ],
+            //   )
+            // )
             
           ],
         ),
       )),
+
+      floatingActionButton: Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+        //   decoration: BoxDecoration(
+        //   borderRadius: BorderRadius.circular(50),
+        //   boxShadow: [
+        //     BoxShadow(
+        //       color: const Color(0xff0E1446).withOpacity(0.4),
+        //       spreadRadius: 2,
+        //       blurRadius: 20,
+        //       offset: Offset(0, 2), // changes position of shadow
+        //     ),
+        //   ],
+        //   // color: Color(0xff0E1446),
+        // ),
+          margin: EdgeInsets.only(left: 35),
+          // color: Colors.blue,
+          child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+                padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.horizontal(left: Radius.circular(50))
+                    )
+                ),
+              ),
+              onPressed: (){},
+              child: const Icon(
+                Icons.home_outlined,
+                color: Color(0xffFFD131),
+              ),
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+                padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero
+                    )
+                ),
+              ),
+              onPressed: (){
+                Navigator.pushNamed(context, '/laundry');
+              },
+              child: const Icon(Icons.confirmation_num_outlined),
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Color(0xff0E1446)),
+                padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero
+                    )
+                ),
+              ),
+              onPressed: (){},
+              child: const Icon(Icons.location_on_outlined),
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Color(0xffF467BB)),
+                  padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 20, horizontal: 30)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.horizontal(right: Radius.circular(50))
+                      )
+                  )
+              ),
+              onPressed: (){},
+              child: const Icon(Icons.timer_sharp),
+            ),
+          ],
+        ),
+        ),
+      )
     );
   }
 }
