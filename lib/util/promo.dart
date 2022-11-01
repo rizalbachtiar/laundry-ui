@@ -18,7 +18,7 @@ class Promo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 16, top: 16, right: 100, bottom: 16),
-      margin: const EdgeInsets.only(right: 15),
+      margin: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
           color: Colors.grey[400], 
           borderRadius: BorderRadius.circular(20),
@@ -27,7 +27,7 @@ class Promo extends StatelessWidget {
             fit: BoxFit.cover
           )),
       child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -37,7 +37,7 @@ class Promo extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 4,
+              height: 8,
             ),
             Text(
               secondName,
@@ -46,7 +46,7 @@ class Promo extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 4,
+              height: 8,
             ),
             Container(
               padding: const EdgeInsets.all(8),
