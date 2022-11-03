@@ -1,3 +1,4 @@
+import 'package:clone_ui_2/pages/detail_laundry_page.dart';
 import 'package:clone_ui_2/pages/home_page.dart';
 import 'package:clone_ui_2/pages/laundry_location_page.dart';
 import 'package:clone_ui_2/pages/laundry_page.dart';
@@ -42,7 +43,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
             HomePage(),
             LaundryPage(),
             LaundryLocationPage(),
-            Center(child: Text('E'),),
+            DetailLaundryPage(),
           ],
         ),
         extendBody: true,
