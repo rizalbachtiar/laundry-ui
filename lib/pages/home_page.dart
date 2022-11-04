@@ -247,7 +247,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 height: 25,
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.only(left: 20, right: 20, bottom: 5),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -265,7 +265,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   primary: false,
                   slivers: <Widget>[
                     SliverPadding(
-                      padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
+                      padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
                       sliver: SliverGrid.count(
                         crossAxisSpacing: 20,
                         mainAxisSpacing: 20,
