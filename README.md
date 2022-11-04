@@ -1,16 +1,11 @@
 # Jemur-Laundry-App
 
-A new Flutter project.
+designed by [Jemur](https://www.figma.com/file/FeaROoyb208M7eIy9JnqjW/Jemur---Laundry-App-(Community)?node-id=3%3A2)
 
-## Getting Started
+<img width ="300" alt="Screen Shot 2022-11-04 at 15 12 50" src="https://user-images.githubusercontent.com/32255088/199940828-fa3da32c-3b3e-4844-aea8-92360d9fd322.png"> <img width ="300" alt="Screen Shot 2022-11-04 at 15 12 43" src="https://user-images.githubusercontent.com/32255088/199940857-c58cb1de-bf6d-48fc-b94c-6892db72ae21.png">
 
-This project is a starting point for a Flutter application.
+<img width="300" alt="Screen Shot 2022-11-04 at 15 12 37" src="https://user-images.githubusercontent.com/32255088/199943979-9cb771ac-01f3-4175-a3fb-cfc957b41a0d.png"> <img width="300" alt="Screen Shot 2022-11-04 at 15 12 29" src="https://user-images.githubusercontent.com/32255088/199944030-0d7521fd-49b6-49b6-a425-bfe063db0a90.png">
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
